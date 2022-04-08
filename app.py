@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import json
 
-
+# import providers json and append a "time_seen" field to each entry to make sorting easier
 with open('static/providers.json', encoding='utf8') as d:
     data = json.load(d)
 

@@ -1,0 +1,22 @@
+<html>
+<table style="width:100%">
+    <!-- table header -->
+    {% if result %}
+    <tr>
+        {% for key in result[0] %}
+        <th> {{ key }} </th>
+        {% endfor %}
+    </tr>
+    {% endif %}
+
+    <!-- table rows -->
+    {% for dict_item in result %}
+    <tr>
+        {% for value in dict_item.values() %}
+        <td> {{ value }} </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+</html>

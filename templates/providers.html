@@ -1,0 +1,26 @@
+<html>
+<form action="{{ url_for('search') }}" method="post">
+  First Name: <input type="text" name="First Name"><br>
+  Last Name: <input type="text" name="Last Name"><br>
+  Sex: <select id="sex" name="Sex">
+    <option value="any">Any</option>
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+    <option value="Agender">Agender</option>
+    <option value="Polygender">Polygender</option>
+    <option value="Genderqueer">Genderqueer</option>
+  </select><br>
+  Birth Date: <input type="text" name="Birth Date"><br>
+  Primary Skills: <input type="text" name="Primary Skills"><br>
+  Secondary Skill: <input type="text" name="Secondary Skill"><br>
+  Company: <input type="text" name="Company"><br>
+  Active: <select id="active" name="Active">
+    <option value=1>Yes</option>
+    <option value=0>No</option>
+  </select><br>
+  Country: <input type="text" name="Country"><br>
+  Language: <input type="text" name="Language"><br>
+  <input type="submit" value="Submit">
+</form>
+
+</html>
